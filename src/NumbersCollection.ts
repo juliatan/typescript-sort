@@ -1,12 +1,17 @@
 // extract logic pertaining to just an array of numbers
-export class NumbersCollection {
+// Because we ultimately want to called sort method within this class, let's inherit from Sorter
+import { Sorter } from "./Sorter";
+
+export class NumbersCollection extends Sorter {
   // data: number[];
   // constructor(data: number[]) {
   //   this.data = data;
   // }
 
   // same as above
-  constructor(public data: number[]) {}
+  constructor(public data: number[]) {
+    super();
+  }
 
   // get keyword allows use to just call collection.length (rather than collection.length()
   get length(): number {
