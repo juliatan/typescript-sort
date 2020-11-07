@@ -1,4 +1,3 @@
-// logic for just a string
 import { Sorter } from "./Sorter";
 
 export class CharactersCollection extends Sorter {

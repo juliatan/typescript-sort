@@ -7,9 +7,7 @@ interface Sortable {
   swap(leftIndex: number, rightIndex: number): void;
 }
 
-// extract out the sorting logic and don't have it working directly with solely an array of numbers
 export abstract class Sorter {
-
   // tell Typescript that these methods don't exist in this class, but DEFINITELY will exist in child classes
   abstract compare(leftIndex: number, rightIndex: number): boolean;
   abstract swap(leftIndex: number, rightIndex: number): void;
