@@ -1,3 +1,5 @@
+import { Sorter } from "./Sorter";
+
 class Node {
   // if next is called, it returns a Node or nothing (if at end of LinkedList). Default is null.
   next: Node | null = null;
@@ -6,7 +8,7 @@ class Node {
 }
 
 // only to store numbers
-export class LinkedList {
+export class LinkedList extends Sorter {
   // start of LinkedList can either be a Node or nothing
   head: Node | null = null;
 
